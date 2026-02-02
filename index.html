@@ -5,25 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voyage LeSIEUR</title>
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- link font -->
+    <!-- link font -->
+    <!-- link font -->
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="js/scripts.js" defer></script>
   </head>
+
   <body>
-    <nav></nav>
-    <div class="wrapper">
-        <img src="images/logo.svg" alt="logo Voyage LeSIEUR">
+    <nav>
+      <div class="wrapper">
+        <img src="images/logo.svg" alt="logo Voyage LeSIEUR" />
         <p>Voyage LeSIEUR</p>
         <ul>
-            <li><a href="#">Magasiner</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Blog</a></li>
+          <li><a href="#">Magasiner</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Blog</a></li>
         </ul>
-    </div>
-    <header>
-      <div class="wrapper"></div>
-    </header>
+      </div>
+    </nav>
 
-    <section>
-      <div class="wrapper"></div>
+    <section class="hero">
+      <div class="wrapper">
+        <h1>Trouver tout pour le voyage!</h1>
+      </div>
     </section>
+
+    <div class="content">
+      <div class="wrapper">
+        <section class="recherche">
+          <p>Transports</p>
+          <img src="images/icone.svg" alt="icone plus" class="js-plus"/>
+        </section>
+
+        <section class="forfaits">
+          <div class="contenu">
+            <img src="images/avion.jpg" alt="avion" />
+            <h3>forfaits avion</h3>
+            <p>Voyager rapidement et confortablement</p>
+          </div>
+
+          <div class="contenu">
+            <img src="images/bateau.jpg" alt="bateau" />
+            <h3>forfaits croisière</h3>
+            <p>Laissez-vous transporter par les vagues</p>
+          </div>
+
+          <div class="contenu">
+            <img src="images/auto.jpg" alt="auto" />
+            <h3>forfait voiture</h3>
+            <p>Voitures de luxe pour plus de confort</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <p>Voyage LeSieur</p>
+        <nav class="menu-social">
+          <ul>
+            <li class="facebook">
+              <a href="images/facebook.svg"
+                ><img src="images/facebook.svg" alt="logo facebook"
+              /></a>
+            </li>
+            <li class="twitter"><a href="images/twitter.svg"></a></li>
+            <li class="linkedin"><a href="images/linkedin.svg"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
