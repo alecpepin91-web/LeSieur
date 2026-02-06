@@ -2,15 +2,14 @@
 GENERIC
 ===================================================== */
 html {
-    box-sizing: border-box
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
-
 
 /* ==================================================
 GENERIC
@@ -18,45 +17,51 @@ GENERIC
 
 /* -----------------Base---------------------- */
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.wrapper{
-    max-width: 1080px;
-    margin: 0 auto;
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 /* ------------------ Éléments textes ------------------ */
 
-h1{
-    font-family: "roboto";
-    font-size: 36px;
-    font-weight:300;
+h1 {
+  font-family: "roboto";
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 20%;
 }
 
-h2{
-    font-family: "roboto";
-    font-size: 18px;
-    font-weight:bold;
+h2 {
+  font-family: "roboto";
+  font-size: 18px;
+  font-weight: bold;
 }
 
-h3{
-    font-family: "roboto";
-    font-size: 36px;
-    font-weight: normal;
+h3 {
+  font-family: "roboto";
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0px;
 }
 
-h3 .bold{
-    font-weight: 800;
+h3 .bold {
+  font-weight: 800;
 }
 
-p{
-    font-family: "rotobo";
-    font-size: 18px;
-    font-weight: normal;
+p {
+  font-family: "rotobo";
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
 }
 
+li {
+  list-style-type: none;
+}
 
 /* ==================================================
 COMPONENTS
@@ -64,59 +69,137 @@ COMPONENTS
 
 /* ------------------ nav ------------------ */
 
-nav .wrapper{
+.menu-nav .wrapper {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: space-between;
+}
+
+.menu-nav a {
+  font-family: "roboto";
+  font-size: 36px;
+  font-weight: 800;
+  color: white;
+
+  display: flex;
+  align-items: center;
+
+  height: 80px;
+  text-decoration: none;
+}
+
+.menu-nav li a {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.menu-nav li a:hover {
+  text-decoration: underline;
+}
+
+.menu-nav {
+  background-color: #f26c25;
+}
+
+.menu-nav ul {
+  display: flex;
+  gap: 60px;
+}
+
+/* erreur avec la taille du logo */
+/* .logo {
+    height:60px ;
+    width: 60px;
+} */
+
+/* ------------------ HERO ------------------ */
+
+.hero {
+  background-color: #eeeeee;
+}
+
+.hero .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* ------------------ CONTENT ------------------ */
+
+/* ----------- recherche ----------- */
+
+.recherche {
+  background-color: #eeeeee;
+  border: 1px solid #d0d0d0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+/* ----------- contenu ----------- */
+
+.forfaits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+
+  text-align: center;
+  margin-bottom: 85px;
+}
+
+.contenu h3 {
+  margin-top: 30px;
+}
+
+.contenu p{
+    margin-top:15px ;
+}
+
+
+/* ------------------ FOOTER ------------------ */
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-family: "roboto";
+}
+
+footer .wrapper{
     display: flex;
     align-items: center;
-    height: 80px;
-    justify-content:space-between;
-}    
-
-nav a{
-    font-family: "roboto";
-    font-size: 36px;
-    font-weight: 800;
-    color: white;
-
-
-       display: flex;
-    align-items: center;
-    
-
-    height: 80px;
-    text-decoration: none;
+    height: 70px;
+    justify-content: space-between;
 }
 
-nav li a{
-    font-size: 18px;
+footer ul{
+display: flex;
+justify-content: space-between;
+gap: 20px;
 }
 
-nav{
-    background-color: #F26C25;
-
+.facebook a:hover {
+  background-color: #0a66c2;
 }
 
-
-
-
-
-
-
-
-
-.facebook a:hover{
-    background-color: #0a66c2;
+.twitter a:hover {
+  background-color: #0a66c2;
 }
 
-.twitter a:hover{
-    background-color: #0a66c2;
+.linkedin a:hover {
+  background-color: #0a66c2;
 }
-
-.linkedin a:hover{
-    background-color: #0a66c2;
-}
-
 
 /*AIDE STYLISTIQUE*/
-.conteneur-transports-invisible{
-    display: none;
+.conteneur-transports-invisible {
+  display: none;
 }
